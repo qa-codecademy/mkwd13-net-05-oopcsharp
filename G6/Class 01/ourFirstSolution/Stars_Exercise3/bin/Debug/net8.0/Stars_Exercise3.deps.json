@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Stars_Exercise3/1.0.0": {
+        "runtime": {
+          "Stars_Exercise3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Stars_Exercise3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
