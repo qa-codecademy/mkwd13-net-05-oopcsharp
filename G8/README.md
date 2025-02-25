@@ -1,5 +1,5 @@
-# Group 2
+# Group 8
 
 ## Contact
-- Trainer: [Martin Panovski]: [panovski.martin93@gmail.com]
-- Assistant: [Frosina Stamenkovska]: [stamenkovskaf@gmail.com]
+- Trainer: [FullName] [trainer@mail.com]
+- Assistant: [FullName] [asistant@mail.com]
