@@ -1,5 +1,5 @@
 # Group 6
 
 ## Contact
-- Trainer: [FullName] [trainer@mail.com]
-- Assistant: [FullName] [asistant@mail.com]
+Trainer: Tijana Stojanovska - stojanovska_tijana@outlook.com 
+Assistant: Murat Koca - muratkoca137@gmail.com
