@@ -1,5 +1,5 @@
 # Group 3
 
 ## Contact
-- Trainer: [FullName] [trainer@mail.com]
-- Assistant: [FullName] [asistant@mail.com]
+- Trainer: [Trajan Stevkovski] [trajanstevkovski@gmail.com]
+- Assistant: [Slave Ivanovski] [slaveivanovski028@gmail.com]
