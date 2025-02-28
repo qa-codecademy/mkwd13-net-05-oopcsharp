@@ -7,7 +7,7 @@ namespace QA.SeeSharp.Class02.App
     {
         static void Main(string[] args)
         {
-
+            #region variables
             // declaration
             int number;
             Int32 number1 = 10;
@@ -78,9 +78,92 @@ namespace QA.SeeSharp.Class02.App
             bool isFalse = false && true && true;
 
             bool isValid1 = true || false || false && true;
-            
+
+            int z = int.MaxValue;
+            int x = int.MaxValue;
+            int result10 = z + x;
+            Console.WriteLine(result10);
+
+            int num11 = 10;
+            num11 = num11 + 1;
+            num11 ++;
+            num11 += 1;
+            num11 += 5;
+            num11 = num11 + 5;
+
+            num11 = num11 - 1;
+            num11--;
+            num11 -= 1;
+
+            bool isValid10 = true;
+            isValid10 &= true;
+            isValid10 = isValid10 && true;
+
+            bool isValid11 = true;
+            isValid11 |= true;
+            isValid11 = isValid11 || true;
+
+            bool isValid12 = !isValid11;
+            isValid12 = !isValid12;
+
             Console.WriteLine("Hello, World!");
             Console.ReadLine();
+
+            #endregion
+
+
+
+
+            //string input = Console.ReadLine();
+            //Console.WriteLine(input);
+
+            //int parsedNumber = int.Parse(input);
+            //Console.WriteLine(parsedNumber);
+
+            //string input1 = Console.ReadLine();
+            
+            //bool parsedBool = bool.Parse(input1);
+            //Console.WriteLine(parsedBool);
+
+            //string input2 = Console.ReadLine();
+
+            //double parsedDouble = double.Parse(input2);
+            //Console.WriteLine(parsedDouble);
+
+            //string input3 = Console.ReadLine();
+
+            //long parsedLong = long.Parse(input3);
+            //Console.WriteLine(parsedLong);
+
+            //string input4 = Console.ReadLine();
+
+            //char parsedChar = char.Parse(input4);
+            //Console.WriteLine(parsedChar);
+
+            //string input10 = Console.ReadLine();
+            //string input11 = Console.ReadLine();
+
+            //int number10 = int.Parse(input10);
+            //int number11 = int.Parse(input11);
+
+            //int reulst10 = number10 + number11;
+            //Console.WriteLine(reulst10);
+
+            string input20 = Console.ReadLine();
+
+            int parsedNumber10 = Convert.ToInt32(input20);
+            Console.WriteLine(parsedNumber10);
+            
+            string input21 = Console.ReadLine();
+
+            long parsedLong10 = Convert.ToInt64(input21);
+            Console.WriteLine(parsedLong10);
+
+            string input22 = Console.ReadLine();
+
+            bool isValid200 = Convert.ToBoolean(input22);
+            Console.WriteLine(isValid200);
+
         }
     }
 }
