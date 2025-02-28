@@ -191,7 +191,17 @@ namespace QA.SeeSharp.Class02.App
 
             char.TryParse("", out char ad);
 
+            //EXERCISE
 
+            //FROM STRING TO SHORT
+
+            //FROM STRING TO LONG
+
+            //FROM LONG TO SHORT
+
+            //FROM STRING TO DOUBLE
+
+            //FROM DOUBLE TO FLOAT
         }
     }
 }
