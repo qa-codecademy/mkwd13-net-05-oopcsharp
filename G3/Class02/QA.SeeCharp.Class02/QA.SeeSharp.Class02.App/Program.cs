@@ -121,7 +121,7 @@ namespace QA.SeeSharp.Class02.App
             //Console.WriteLine(parsedNumber);
 
             //string input1 = Console.ReadLine();
-            
+
             //bool parsedBool = bool.Parse(input1);
             //Console.WriteLine(parsedBool);
 
@@ -149,20 +149,48 @@ namespace QA.SeeSharp.Class02.App
             //int reulst10 = number10 + number11;
             //Console.WriteLine(reulst10);
 
-            string input20 = Console.ReadLine();
+            //string input20 = Console.ReadLine();
 
-            int parsedNumber10 = Convert.ToInt32(input20);
-            Console.WriteLine(parsedNumber10);
-            
-            string input21 = Console.ReadLine();
+            //int parsedNumber10 = Convert.ToInt32(input20);
+            //Console.WriteLine(parsedNumber10);
 
-            long parsedLong10 = Convert.ToInt64(input21);
-            Console.WriteLine(parsedLong10);
+            //string input21 = Console.ReadLine();
 
-            string input22 = Console.ReadLine();
+            //long parsedLong10 = Convert.ToInt64(input21);
+            //Console.WriteLine(parsedLong10);
 
-            bool isValid200 = Convert.ToBoolean(input22);
-            Console.WriteLine(isValid200);
+            //string input22 = Console.ReadLine();
+
+            //bool isValid200 = Convert.ToBoolean(input22);
+            //Console.WriteLine(isValid200);
+
+            //short parsed = Convert.ToInt16(parsedNumber10);
+
+            string input30 = Console.ReadLine();
+
+            int tryParseInteger = default;
+            bool isValidParsing = int.TryParse(input30, out tryParseInteger);
+
+            bool isValidParsing2 = int.TryParse(input30, out int something1);
+            int sum = something1 + tryParseInteger;
+            Console.WriteLine(sum);
+
+            Console.WriteLine(isValidParsing);
+            Console.WriteLine(tryParseInteger);
+
+            string input31 = Console.ReadLine();
+
+            bool isValidParsingOfBoolean
+                = bool.TryParse(input31, out bool value);
+
+            Console.WriteLine(isValidParsingOfBoolean);
+            Console.WriteLine(value);
+
+            double.TryParse("", out double abc);
+            long.TryParse("", out long abcd);
+
+            char.TryParse("", out char ad);
+
 
         }
     }
