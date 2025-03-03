@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System.ComponentModel.Design;
+using System.Globalization;
 using System.Transactions;
 
 namespace QA.SeeSharp.Class02.App
@@ -86,7 +87,7 @@ namespace QA.SeeSharp.Class02.App
 
             int num11 = 10;
             num11 = num11 + 1;
-            num11 ++;
+            num11++;
             num11 += 1;
             num11 += 5;
             num11 = num11 + 5;
@@ -111,9 +112,7 @@ namespace QA.SeeSharp.Class02.App
 
             #endregion
 
-
-
-
+            #region Parsing
             //string input = Console.ReadLine();
             //Console.WriteLine(input);
 
@@ -166,30 +165,30 @@ namespace QA.SeeSharp.Class02.App
 
             //short parsed = Convert.ToInt16(parsedNumber10);
 
-            string input30 = Console.ReadLine();
+            //string input30 = Console.ReadLine();
 
-            int tryParseInteger = default;
-            bool isValidParsing = int.TryParse(input30, out tryParseInteger);
+            //int tryParseInteger = default;
+            //bool isValidParsing = int.TryParse(input30, out tryParseInteger);
 
-            bool isValidParsing2 = int.TryParse(input30, out int something1);
-            int sum = something1 + tryParseInteger;
-            Console.WriteLine(sum);
+            //bool isValidParsing2 = int.TryParse(input30, out int something1);
+            //int sum = something1 + tryParseInteger;
+            //Console.WriteLine(sum);
 
-            Console.WriteLine(isValidParsing);
-            Console.WriteLine(tryParseInteger);
+            //Console.WriteLine(isValidParsing);
+            //Console.WriteLine(tryParseInteger);
 
-            string input31 = Console.ReadLine();
+            //string input31 = Console.ReadLine();
 
-            bool isValidParsingOfBoolean
-                = bool.TryParse(input31, out bool value);
+            //bool isValidParsingOfBoolean
+            //    = bool.TryParse(input31, out bool value);
 
-            Console.WriteLine(isValidParsingOfBoolean);
-            Console.WriteLine(value);
+            //Console.WriteLine(isValidParsingOfBoolean);
+            //Console.WriteLine(value);
 
-            double.TryParse("", out double abc);
-            long.TryParse("", out long abcd);
+            //double.TryParse("", out double abc);
+            //long.TryParse("", out long abcd);
 
-            char.TryParse("", out char ad);
+            //char.TryParse("", out char ad);
 
             //EXERCISE
 
@@ -202,6 +201,111 @@ namespace QA.SeeSharp.Class02.App
             //FROM STRING TO DOUBLE
 
             //FROM DOUBLE TO FLOAT
+            #endregion
+
+
+            // TEMPLATES
+
+            //if (expression)
+            //{
+
+            //}
+
+            //if (expression)
+            //{
+
+            //} 
+            //else
+            //{
+
+            //}
+
+            //if (expression)
+            //{
+
+            //}
+            //else if (second expression) 
+            //{
+
+            //}
+            //else if (third expression) 
+            //{
+
+            //}
+            //else
+            //{
+
+            //}
+
+
+            if (3 < 5)
+            {
+                Console.WriteLine("Im in if statement");
+            }
+
+            int num30 = 15;
+            int num31 = 10;
+
+            if (num30 <= num31)
+            {
+                Console.WriteLine("num30 is larger that num31");
+            }
+            else
+            {
+                Console.WriteLine("Num31 is larger that num30");
+            }
+
+            int budget = 35;
+
+            if (budget >= 75)
+            {
+                Console.WriteLine("You can go to a fancy restorant");
+            }
+            else if (budget < 75 && budget >= 50)
+            {
+                Console.WriteLine("You can go to the movies and get popcorn");
+            }
+            else if (budget < 50 && budget >= 20)
+            {
+                Console.WriteLine("You can get a cup of coffee");
+            }
+            else 
+            {
+                Console.WriteLine("You can stay home");
+            }
+
+
+            // EXCERSISE 5
+
+            int branchesPerTree = 12;
+            int applesPerBranch = 8;
+            int basketSize = 5;
+
+            Console.WriteLine("Please enter how much trees you have: ");
+            string input = Console.ReadLine();
+
+            bool isValidInput = int.TryParse(input, out int trees);
+
+            if (isValidInput)
+            {
+                int treeApples = (branchesPerTree * applesPerBranch) * trees;
+                int baskets = default;
+                if (treeApples % basketSize == 0)
+                {
+                    result = treeApples / basketSize;
+                }
+                else
+                {
+                    result = (treeApples / basketSize) + 1;
+                }
+
+                Console.WriteLine("You would need : " + result + " baskets!");
+            } 
+            else
+            {
+                Console.WriteLine("Not a valid input");
+            }
+
         }
     }
 }
