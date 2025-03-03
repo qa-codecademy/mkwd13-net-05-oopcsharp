@@ -269,7 +269,7 @@ namespace QA.SeeSharp.Class02.App
             {
                 Console.WriteLine("You can get a cup of coffee");
             }
-            else 
+            else
             {
                 Console.WriteLine("You can stay home");
             }
@@ -300,7 +300,7 @@ namespace QA.SeeSharp.Class02.App
                 }
 
                 Console.WriteLine("You would need : " + result + " baskets!");
-            } 
+            }
             else
             {
                 Console.WriteLine("Not a valid input");
@@ -313,12 +313,12 @@ namespace QA.SeeSharp.Class02.App
             int number101 = 21;
 
             int largerNumber = default;
-            
+
             if (number100 > number101)
             {
                 largerNumber = number100;
                 Console.WriteLine("The number " + number100 + " is larger then " + number101);
-            } 
+            }
             else
             {
                 largerNumber = number101;
@@ -333,6 +333,76 @@ namespace QA.SeeSharp.Class02.App
             else
             {
                 Console.WriteLine("Is Odd");
+            }
+
+
+            // SWITCH TEMPLATE
+
+            int value = 10;
+            // value is concrete vaalue
+            switch (value)
+            {
+                case 1:
+                    // lots of code
+                    break;
+                case 2:
+                    // lots of code
+                    break;
+                default:
+                    // lots of code
+                    break;
+            }
+
+            int dayOfWeek = 3;
+
+            switch (dayOfWeek)
+            {
+                case 1:
+                    Console.WriteLine("Monday");
+                    break;
+                case 2:
+                    Console.WriteLine("Tuesday");
+                    break;
+                case 3:
+                    Console.WriteLine("Wednesday");
+                    break;
+                case 4:
+                    Console.WriteLine("Thursday");
+                    break;
+                case 5:
+                    Console.WriteLine("Friday");
+                    break;
+                case 6:
+                    Console.WriteLine("Saturday");
+                    break;
+                case 7:
+                    Console.WriteLine("Sunday");
+                    break;
+                default:
+                    Console.WriteLine("No such day");
+                    break;
+            }
+
+            int day = 3;
+
+            switch(day)
+            {
+                case 1:
+                case 3:
+                    Console.WriteLine("Academy");
+                    break;
+                case 2:
+                case 4:
+                case 5:
+                    Console.WriteLine("Free");
+                    break;
+                case 6:
+                case 7:
+                    Console.WriteLine("Weekend");
+                    break;
+                default:
+                    Console.WriteLine("no such day");
+                    break;
             }
         }
     }
