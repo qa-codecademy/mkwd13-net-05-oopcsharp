@@ -306,6 +306,34 @@ namespace QA.SeeSharp.Class02.App
                 Console.WriteLine("Not a valid input");
             }
 
+
+            // EXCERSISE 6
+
+            int number100 = 10;
+            int number101 = 21;
+
+            int largerNumber = default;
+            
+            if (number100 > number101)
+            {
+                largerNumber = number100;
+                Console.WriteLine("The number " + number100 + " is larger then " + number101);
+            } 
+            else
+            {
+                largerNumber = number101;
+                Console.WriteLine("The number " + number101 + " is larger then " + number100);
+
+            }
+
+            if (largerNumber % 2 == 0)
+            {
+                Console.WriteLine("Is even");
+            }
+            else
+            {
+                Console.WriteLine("Is Odd");
+            }
         }
     }
 }
