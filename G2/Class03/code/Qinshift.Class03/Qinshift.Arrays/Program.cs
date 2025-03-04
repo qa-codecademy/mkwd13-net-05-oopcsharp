@@ -59,11 +59,28 @@ Console.WriteLine($"The index of 7 is {indexOfSeven}"); // -1 => when item is no
 Console.WriteLine("\n======= Adding new items =======\n");
 // Arrays have *fixed size*, so we can't directly add elements to them
 // Instead, we use resizing 
+string[] newStudents = new string[3];
+newStudents[0] = "Bob";
+newStudents[1] = "John";
+newStudents[2] = "Zvonko";
+
+//Array.Resize(ref newStudents, 4);
+Array.Resize(ref newStudents, newStudents.Length + 1);
+newStudents[3] = "Dare";
+
+Console.WriteLine(newStudents[3]);
 
 
+// With arrays, each holding 2 whole numbers
+int[][] arrayOfArrays = new int[5][]
+{
+    new int[2] {1, 2},
+    new int[2] {3, 4},
+    new int[2] {5, 6},
+    new int[2] {7, 8},
+    new int[2] {9, 12},
+};
 
-
-
-
+Console.WriteLine(arrayOfArrays[1][0]);
 
 Console.ReadLine();
