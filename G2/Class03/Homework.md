@@ -33,3 +33,12 @@ Make a console application called SumOfEven. Inside it create an array of 6 inte
   * Stanko
   * Branko
   * Trajko
+
+## Task 3
+
+* Create an array with names
+* Give an option to the user to enter a name from the keyboard
+* After entering the name put it in the array
+* Ask the user if they want to enter another name(Y / N)
+* Do the same process over and over until the user enters N
+* Print all the names after user enters N
