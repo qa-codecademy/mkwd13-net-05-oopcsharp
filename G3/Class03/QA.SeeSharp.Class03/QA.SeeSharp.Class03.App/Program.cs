@@ -155,6 +155,37 @@
 
             }
 
+
+            Console.WriteLine("===================================");
+            // EXERCISE 04
+
+            int[][] matrix = new int[][]
+            {
+                new int[] { 1, 2 },
+                new int[] { 2, 3 }
+            };
+
+            // EXERCISE 05
+
+            int[] nums = new int[5];
+
+            for(int i = 0; i < nums.Length;i += 1)
+            {
+                string input = Console.ReadLine();
+                int number = int.Parse(input);
+
+                nums[i] = number;
+            }
+
+            int sum = 0; // default
+
+            foreach(int number in nums)
+            {
+                sum += number;
+            }
+
+            Console.WriteLine("The sum is: " + sum);
+
             Console.WriteLine("Hello, World!");
         }
     }
