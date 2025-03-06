@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QA.SeeSharp.Class04.App", "QA.SeeSharp.Class04.App\QA.SeeSharp.Class04.App.csproj", "{775B1F83-E159-4695-A408-693BE600BFB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{775B1F83-E159-4695-A408-693BE600BFB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{775B1F83-E159-4695-A408-693BE600BFB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{775B1F83-E159-4695-A408-693BE600BFB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{775B1F83-E159-4695-A408-693BE600BFB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAFE7B97-F472-49B7-AFF9-40A409539281}
+	EndGlobalSection
+EndGlobal
