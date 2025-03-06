@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qinshift.Exercises", "Qinsh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qinshift.Strings", "Qinshift.Strings\Qinshift.Strings.csproj", "{BBEF83B4-0BD3-40FB-BAAE-584B6BB356C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qinshift.Dates", "Qinshift.Dates\Qinshift.Dates.csproj", "{C82DD76D-8F76-4825-90B0-A91EC906F281}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BBEF83B4-0BD3-40FB-BAAE-584B6BB356C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBEF83B4-0BD3-40FB-BAAE-584B6BB356C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBEF83B4-0BD3-40FB-BAAE-584B6BB356C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C82DD76D-8F76-4825-90B0-A91EC906F281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C82DD76D-8F76-4825-90B0-A91EC906F281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C82DD76D-8F76-4825-90B0-A91EC906F281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C82DD76D-8F76-4825-90B0-A91EC906F281}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
