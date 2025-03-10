@@ -75,7 +75,99 @@
             Console.WriteLine(row);
 
             // STRING METHODS
+            string ourString = "   We are learning C# and it is FUN and EASY. Okay maybe just FUN.    ";
 
+            string[] splited = ourString.Split('.');
+            foreach(string b in splited)
+            {
+                Console.WriteLine(b);
+            }
+            string[] splited1 = ourString.Split('.', StringSplitOptions.TrimEntries);
+            foreach (string b in splited1)
+            {
+                Console.WriteLine(b);
+                Console.WriteLine("----");
+            }
+
+            int indexOfFUN = ourString.IndexOf("FUN");
+            Console.WriteLine(indexOfFUN);
+            int indexOfNone = ourString.IndexOf("None");
+            Console.WriteLine(indexOfNone);
+
+            string subString = ourString.Substring(3, 18);
+            Console.WriteLine(subString);
+
+            char[] chars = ourString.ToCharArray();
+            foreach (char item in chars)
+            {
+                Console.WriteLine(item);
+            }
+
+            //Console.WriteLine(chars.ToString());
+
+            string joinedString = string.Join(",", chars);
+            Console.WriteLine(joinedString);
+            string ourString2 = string.Join("*", splited);
+            Console.WriteLine(ourString2);
+
+            Console.WriteLine(new string(chars));
+
+            string abc = " ";
+
+            //if(abc == string.Empty || abc.Trim() == "" || abc != null)
+            // CHECKS IF STRING IS NULL OR EMPTY
+            bool isValidString = string.IsNullOrEmpty(abc);
+            // CHECKS IF STRING IS NULL OR EMPTY OR WHITE SPACE
+            bool isValidString2 = string.IsNullOrWhiteSpace(abc);
+            Console.WriteLine(isValidString);
+            Console.WriteLine(isValidString2);
+
+
+            // DATES
+
+            DateTime aData = new DateTime();
+            Console.WriteLine(aData);
+            // Creating a custom date         year month day
+            DateTime customDate = new DateTime(1992, 10, 15);
+            Console.WriteLine(customDate);
+
+            // Variations:
+            //string stringDate = "12.15.2012";
+            //string stringDate = "12/15/2012";
+            //string stringDate = "12/15/12";
+            //string stringDate = "dec.15.12";
+            string stringDate = "12-15-2012";
+
+            DateTime convertDate = DateTime.Parse(stringDate);
+            Console.WriteLine(convertDate);
+
+            DateTime currentDay = DateTime.Today;
+            Console.WriteLine(currentDay);
+
+            DateTime currentDateAndTime = DateTime.Now;
+            Console.WriteLine(currentDateAndTime);
+
+            Console.WriteLine(convertDate.Month);
+            Console.WriteLine(convertDate.Day);
+            Console.WriteLine(convertDate.Year);
+
+            DateTime bDate = DateTime.Now;
+            DateTime addDays = bDate.AddDays(2);
+            Console.WriteLine(addDays);
+            DateTime addMinusDays = bDate.AddDays(-7);
+            Console.WriteLine(addMinusDays);
+            bDate.AddYears(2);
+            bDate.AddYears(-1);
+            bDate.AddMonths(10);
+
+            string dateFormat1 = currentDateAndTime.ToString("MM/dd/yyyy");
+            string dateFormat2 = currentDateAndTime.ToString("dddd, dd MMMM yyyy");
+            string dateFormat3 = string.Format("Today is {0:MM/dd/yy}, {0:dddd}", currentDateAndTime);
+            string dateFormat4 = string.Format("Today is {0:dd-MMMM-yyyy}, {0:t}, {0:HH:mm}", currentDateAndTime);
+            Console.WriteLine(dateFormat1);
+            Console.WriteLine(dateFormat2);
+            Console.WriteLine(dateFormat3);
+            Console.WriteLine(dateFormat4);
         }
     }
 }

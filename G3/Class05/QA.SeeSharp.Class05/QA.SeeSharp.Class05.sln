@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35825.156 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QA.SeeSharp.Class05.App", "QA.SeeSharp.Class05.App\QA.SeeSharp.Class05.App.csproj", "{130437A5-994A-498A-A888-6EA4D81D923E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QA.SeeSharp.Class05.Exercises", "QA.SeeSharp.Class05.Exercises\QA.SeeSharp.Class05.Exercises.csproj", "{194116BD-44C5-4B84-80EE-A6555CED32D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{130437A5-994A-498A-A888-6EA4D81D923E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{130437A5-994A-498A-A888-6EA4D81D923E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{130437A5-994A-498A-A888-6EA4D81D923E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{194116BD-44C5-4B84-80EE-A6555CED32D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{194116BD-44C5-4B84-80EE-A6555CED32D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{194116BD-44C5-4B84-80EE-A6555CED32D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{194116BD-44C5-4B84-80EE-A6555CED32D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
