@@ -54,9 +54,28 @@
                 also the leap into electronic typesetting, remaining essentially 
                 unchanged. It was popularised in";
 
-
+            // ESCAPE ""
             string str10 = "C# is \"popular\" language";
             string str11 = @"C# is ""popular"" language";
+
+
+            // STRING FORMATING
+            string yStringCuurency = string.Format("{0:C}", 125.45);
+            Console.WriteLine(yStringCuurency);
+            string myStringNumber = string.Format("{0:N}", 190);
+            Console.WriteLine(myStringNumber);
+            string myStringPercent = string.Format("{0:P}", .22);
+            Console.WriteLine(myStringPercent);
+            string myCustomStr = string.Format("{0:0##-###-###}", 078270396);
+            Console.WriteLine(myCustomStr);
+
+            string headers = string.Format("| {0,10} | {1, 10} |", "Id", "Order");
+            string row = string.Format("| {0,10} | {1, 10} |", 25, "a box");
+            Console.WriteLine(headers);
+            Console.WriteLine(row);
+
+            // STRING METHODS
+
         }
     }
 }
