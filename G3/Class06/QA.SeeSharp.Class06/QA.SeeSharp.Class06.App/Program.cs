@@ -27,6 +27,30 @@
             Plane plane1 = new Plane("Avion");
             Plane plane3 = new Plane("Avion1", 100, "Cesna", "Plav", false);
 
+            // USING DEFAULT CONSTRUCTOR BUT ADDING VALUES AFTER THAT
+            Plane plane4 = new Plane()
+            {
+                CanFly = true,
+                Name = "Avion",
+                Color = "Blue",
+                SeatCapacity = 100,
+                Type = "Cesna"
+            };
+
+
+            string[] a = new string[5];
+            Plane[] b = new Plane[]
+            {
+                new Plane(),
+                new Plane()
+            };
+
+
+            ThisIsAType[] things = new ThisIsAType[]
+            {
+                new ThisIsAType()
+            };
+
             Console.WriteLine("Hello, World!");
         }
     }
