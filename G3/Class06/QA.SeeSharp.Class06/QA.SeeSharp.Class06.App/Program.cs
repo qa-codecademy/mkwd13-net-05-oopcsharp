@@ -51,6 +51,14 @@
                 new ThisIsAType()
             };
 
+            // Anonymous objects
+            var anonymousObj = new
+            {
+                Name = "Trajan",
+                Age = 23,
+                IsValid = true
+            };
+
             Console.WriteLine("Hello, World!");
         }
     }
