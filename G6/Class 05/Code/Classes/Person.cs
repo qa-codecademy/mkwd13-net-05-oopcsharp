@@ -40,5 +40,29 @@
             Age = 0;
             _ssn = new Random().Next(100000, 999999);
         }
+
+        public void PrintDetails()
+        {
+            Console.WriteLine($"Firstname: {FirstName}, Lastname: {LastName}, Age: {Age}, SSN: {_ssn}");
+        }
+
+        //we can use this method to access the value of ssn from outside
+        public long GetSSN()
+        {
+            return _ssn;
+        }
+
+        //we can set the ssn value from outside, but in a controlled way
+        public void SetSSN(long ssn)
+        {
+            if (ssn >= 100000 && ssn <= 999999)
+            {
+                _ssn = ssn;
+            }
+            else
+            {
+                Console.WriteLine("Invalid ssn value");
+            }
+        }
     }
 }
