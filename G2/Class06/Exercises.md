@@ -22,7 +22,7 @@ The number should be entered in the console by the user.
 
 ## Task 2
 
-Create a class User with the following:
+Create a class User with the following properties:
 
 * Id - int
 * Username - string
