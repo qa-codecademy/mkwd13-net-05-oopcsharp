@@ -7,6 +7,8 @@
 
         public string LastName { get; set; }
 
+        public double Age { get; set; }
+
         // METHODS
         public void PrintFullName()
         {
