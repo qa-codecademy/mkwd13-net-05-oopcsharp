@@ -22,12 +22,12 @@ The number should be entered in the console by the user.
 
 ## Task 2
 
-Create a class User with the following:
+Create a class User with the following properties:
 
 * Id - int
 * Username - string
 * Password - string
-* Messages - Array of strings
+* Messages - Array of strings  
 Create an array of users and add 3 users to it manually ( hard-coded ).
 
 Create a Console UI that will ask the user:
