@@ -18,4 +18,14 @@ Console.WriteLine(secondPerson.Age); //0
 Person thirdPerson = new Person("Nikola", "Nikolovski", 25, 111999);
 Console.WriteLine(thirdPerson.FirstName);
 Console.WriteLine(thirdPerson.LastName);
-Console.WriteLine(thirdPerson.Age); 
+Console.WriteLine(thirdPerson.Age);
+
+firstPerson.PrintDetails();
+secondPerson.PrintDetails();
+thirdPerson.PrintDetails();
+
+Console.WriteLine(thirdPerson.GetSSN());
+//thirdPerson._ssn; => ERROR
+//thirdPerson._ssn = 123123; => ERROR
+firstPerson.SetSSN(123123);
+Console.WriteLine(firstPerson.GetSSN());
