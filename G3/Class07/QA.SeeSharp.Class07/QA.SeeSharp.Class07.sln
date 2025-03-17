@@ -5,6 +5,10 @@ VisualStudioVersion = 17.13.35825.156 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QA.SeeSharp.Class07.App", "QA.SeeSharp.Class07.App\QA.SeeSharp.Class07.App.csproj", "{780D458E-6026-4A70-B6F3-C1405415FFC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QA.SeeSharp.Class07.Domain", "QA.SeeSharp.Class07.Domain\QA.SeeSharp.Class07.Domain.csproj", "{205B7FCA-845C-4BFA-BCEF-1AA1A6E02E05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QA.SeeSharp.Class07.Services", "QA.SeeSharp.Class07.Services\QA.SeeSharp.Class07.Services.csproj", "{A1AF9E08-970C-46ED-8234-92AC580D1668}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{780D458E-6026-4A70-B6F3-C1405415FFC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{780D458E-6026-4A70-B6F3-C1405415FFC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{780D458E-6026-4A70-B6F3-C1405415FFC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{205B7FCA-845C-4BFA-BCEF-1AA1A6E02E05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{205B7FCA-845C-4BFA-BCEF-1AA1A6E02E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{205B7FCA-845C-4BFA-BCEF-1AA1A6E02E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{205B7FCA-845C-4BFA-BCEF-1AA1A6E02E05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1AF9E08-970C-46ED-8234-92AC580D1668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1AF9E08-970C-46ED-8234-92AC580D1668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1AF9E08-970C-46ED-8234-92AC580D1668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1AF9E08-970C-46ED-8234-92AC580D1668}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

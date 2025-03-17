@@ -1,4 +1,6 @@
-﻿namespace QA.SeeSharp.Class07.App
+﻿using QA.SeeSharp.Class07.Domain;
+
+namespace QA.SeeSharp.Class07.App
 {
     internal class Program
     {
@@ -25,27 +27,29 @@
             //    Doors = 5
             //};
 
-            //Car car = new Car("Yugo", "Yugo", 5, "White");
-            //Console.WriteLine();
+            Car car = new Car("Yugo", "Yugo", 5, "White", PetrolType.Petrol);
+            Console.WriteLine();
 
-            //Motorcycle moto = new Motorcycle();
+            Motorcycle moto = new Motorcycle();
 
-            //car.Drive();
-            //moto.Drive();
+            car.Drive();
+            moto.Drive();
 
-            //car.Start();
-            //moto.Start();
+            car.Start();
+            moto.Start();
 
-            //car.Stop();
+            car.Stop();
 
-            Car car = new Car("Yugo", "Yugo", 4, "Red", PetrolType.Diesel);
+            //Car car = new Car("Yugo", "Yugo", 4, "Red", PetrolType.Diesel);
 
-            if(car.PetrolType == PetrolType.LPG)
-            {
+            //if(car.PetrolType == PetrolType.LPG)
+            //{
 
-            }
+            //}
 
+            Console.ReadLine();
 
+            Student student = new Student();
 
             Console.WriteLine("Hello, World!");
         }
