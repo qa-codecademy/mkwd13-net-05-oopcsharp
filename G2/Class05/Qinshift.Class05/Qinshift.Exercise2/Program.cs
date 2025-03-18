@@ -42,3 +42,9 @@ while (continueExecute.ToLower() != "n")
 
 int[] numbers = new int[5];
 
+Dog[] dogs = new Dog[5];
+
+
+
+
+
