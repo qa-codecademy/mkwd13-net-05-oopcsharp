@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Linq;
 
 namespace QA.SeeSharp.Class08.App
 {
@@ -10,6 +11,15 @@ namespace QA.SeeSharp.Class08.App
             foreach(var item in collection)
             {
                 Console.WriteLine(item);
+            }
+            Console.WriteLine();
+        }
+
+        static void PrintDogs(List<Dog> collection)
+        {
+            foreach (var item in collection)
+            {
+                Console.WriteLine($"Name: {item.Name} Age: {item.Age}");
             }
             Console.WriteLine();
         }
@@ -159,6 +169,60 @@ namespace QA.SeeSharp.Class08.App
                 new Dog(){Name = "Billy", Age = 1},
                 new Dog(){Name = "Buck", Age = 2}
             };
+
+            // All dogs with name longer than 3 letters
+            List<Dog> dogsThatHaveLongerNameThen3Chars = new List<Dog>();
+            foreach(Dog dog in dogs)
+            {
+                if(dog.Name.Length > 3)
+                {
+                    dogsThatHaveLongerNameThen3Chars.Add(dog);
+                }
+            }
+            PrintDogs(dogsThatHaveLongerNameThen3Chars);
+
+            // Where
+            // All dogs with name longer than 3 letters
+            List<Dog> filteredDogs = 
+                dogs.Where(dog => dog.Name.Length > 3).ToList();
+            PrintDogs(filteredDogs);
+
+            // All dogs that have a name starting with S
+            List<Dog> startingWithS = dogs
+                .Where(dog => dog.Name.StartsWith("S")).ToList();
+            PrintDogs(startingWithS);
+
+            // First dog that is of age 1 and have a name that starts with B
+            Dog ageOneStartWithB = dogs
+                .Where(dog => dog.Age == 1)
+                .Where(dog => dog.Name.StartsWith('B'))
+                .FirstOrDefault();
+
+            Dog simpleFoD = dogs
+                .FirstOrDefault(dog => dog.Age == 1 && dog.Name.StartsWith('B'));
+
+            Console.WriteLine(ageOneStartWithB.Name);
+            // Last dog that is of age 1 and have a name that starts with B
+            Dog ageOneStartWithBLast = dogs
+                .Where(dog => dog.Age == 1)
+                .Where(dog => dog.Name.StartsWith('B'))
+                .LastOrDefault();
+            Console.WriteLine(ageOneStartWithBLast.Name);
+
+            // All names of dogs
+            List<string> namesOfDogs = dogs.Select(dog => dog.Name).ToList();
+            GoTroughCollection(namesOfDogs, "Dogs");
+
+            // All ages of dogs
+            List<int> ages = dogs.Select(dog => dog.Age).ToList();
+            GoTroughCollection(ages, "ages");
+
+            // All names of dogs that are the age of 2
+            List<string> filteredDogs2 = dogs
+                .Where(x => x.Age == 2)
+                .Select(x => x.Name)
+                .ToList();
+            GoTroughCollection(filteredDogs2, "filteredDogs2");
 
             //Console.ReadLine();
         }
