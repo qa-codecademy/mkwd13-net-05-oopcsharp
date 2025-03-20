@@ -32,7 +32,7 @@ namespace Domain.Models
             if (_SuccessSaleRevenue <= 2000)
             {
                 return Salary + 500; //we can access the Salary because SalesPerson inherits from Employee
-            }else if(_SuccessSaleRevenue > 200 &&  _SuccessSaleRevenue <= 5000)
+            }else if(_SuccessSaleRevenue > 2000 &&  _SuccessSaleRevenue <= 5000)
             {
                 return Salary + 1000;
             }
