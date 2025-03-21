@@ -1,4 +1,7 @@
-﻿namespace QA.SeeSharp.RentalApp.App
+﻿using QA.SeeSharp.RentalApp.Business.Services;
+using QA.SeeSharp.RentalApp.Data.Models;
+
+namespace QA.SeeSharp.RentalApp.App
 {
     internal class Program
     {
@@ -6,7 +9,43 @@
         {
             Console.Title = "Video Rental App";
 
-            
+            // GLOBAL VARIABLES
+            UserService _userService = new UserService();
+
+            User activeUser = null;
+
+            HomeScreen();
+            bool isLogedIn = false;
+            while(!isLogedIn)
+            {
+                StartMenu();
+                string input = Console.ReadLine();
+                bool isParsedSuccessfully = int.TryParse(input, out int startMenuInput);
+                if (!isParsedSuccessfully)
+                {
+                    Console.WriteLine("Please enter a valid input");
+                    continue;
+                }
+                switch(startMenuInput)
+                {
+                    case 1:
+                        // Login logic
+                        activeUser = _userService.Login();
+                        if (activeUser == null)
+                        {
+                            continue;
+                        }
+                        isLogedIn = !isLogedIn;
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    default:
+                        Console.WriteLine("Please enter a valid input");
+                        break;
+                }
+            }
         }
 
         static void HomeScreen()

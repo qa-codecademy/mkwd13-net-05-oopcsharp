@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\QA.SeeSharp.RentalApp.Business\QA.SeeSharp.RentalApp.Business.csproj" />
+    <ProjectReference Include="..\QA.SeeSharp.RentalApp.Data\QA.SeeSharp.RentalApp.Data.csproj" />
   </ItemGroup>
 
 </Project>
