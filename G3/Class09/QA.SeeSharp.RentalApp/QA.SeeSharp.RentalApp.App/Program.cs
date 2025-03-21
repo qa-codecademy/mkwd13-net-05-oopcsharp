@@ -38,8 +38,15 @@ namespace QA.SeeSharp.RentalApp.App
                         isLogedIn = !isLogedIn;
                         break;
                     case 2:
+                        activeUser = _userService.SignUp();
+                        if (activeUser == null)
+                        {
+                            continue;
+                        }
+                        isLogedIn = !isLogedIn;
                         break;
                     case 3:
+                        Environment.Exit(0);
                         break;
                     default:
                         Console.WriteLine("Please enter a valid input");
