@@ -1,0 +1,12 @@
+﻿namespace QA.SeeSharp.RentalApp.Data.Models
+{
+    public class User : BaseEntity
+    {
+        public string FullName { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        // Card number will be used as Username
+        public int CardNumber { get; set; }
+        public bool IsSubscriptionExpired{ get; set; }
+        public DateTime SubscriptionExpireTime { get; set; }
+    }
+}
