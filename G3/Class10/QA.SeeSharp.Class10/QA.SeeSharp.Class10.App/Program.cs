@@ -4,6 +4,10 @@
     {
         static void Main(string[] args)
         {
+            // Parsing enum
+            //bool isValid = Enum.TryParse(typeof(Genre), "1", out object genre);
+            //Genre genre1 = (Genre)genre;
+
             List<User> users = new List<User>() { new User() { Name = "Trajan" } };
             //string input = Console.ReadLine();
             //// defensive coding
