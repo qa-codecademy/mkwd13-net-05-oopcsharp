@@ -34,4 +34,13 @@ namespace QA.SeeSharp.Class10.App
 
         //public Movie(string title, Genre genre, int rating, double ticketPrice)
     }
+
+    public enum Genre
+    {
+        Comedy,
+        Horror,
+        Action,
+        Drama,
+        SciFi
+    }
 }
