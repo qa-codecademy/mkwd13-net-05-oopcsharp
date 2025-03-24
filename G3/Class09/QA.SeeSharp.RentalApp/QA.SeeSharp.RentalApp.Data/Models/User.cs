@@ -8,5 +8,15 @@
         public int CardNumber { get; set; }
         public bool IsSubscriptionExpired{ get; set; }
         public DateTime SubscriptionExpireTime { get; set; }
+
+        public List<RentalInfo> RentedMovies { get; set; }
+        public List<RentalInfo> RentedMoviesHistory { get; set; }
+
+        public User()
+        {
+            IsSubscriptionExpired = false;
+            RentedMovies = new List<RentalInfo>();
+            RentedMoviesHistory = new List<RentalInfo>();
+        }
     }
 }

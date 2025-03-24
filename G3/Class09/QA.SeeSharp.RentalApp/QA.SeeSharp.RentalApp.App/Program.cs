@@ -11,14 +11,18 @@ namespace QA.SeeSharp.RentalApp.App
 
             // GLOBAL VARIABLES
             UserService _userService = new UserService();
+            MovieService _movieService = new MovieService();
+            MenuService _menuService = new MenuService();
 
             User activeUser = null;
+            string errorMessage = string.Empty;
 
-            HomeScreen();
+            #region Login/SignUp
+            _menuService.HomeScreen();
             bool isLogedIn = false;
             while(!isLogedIn)
             {
-                StartMenu();
+                _menuService.StartMenu();
                 string input = Console.ReadLine();
                 bool isParsedSuccessfully = int.TryParse(input, out int startMenuInput);
                 if (!isParsedSuccessfully)
@@ -53,29 +57,46 @@ namespace QA.SeeSharp.RentalApp.App
                         break;
                 }
             }
-        }
+            #endregion
 
-        static void HomeScreen()
-        {
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Black;
-            Console.WriteLine("==========================================================================");
-            Console.WriteLine("==========================================================================");
-            Console.WriteLine("==  \\\\    //  || ||||   ||||||  ||||||   ||||||  ||||||  ||  || ||||||  ==");
-            Console.WriteLine("==   \\\\  //   || ||  || ||=     ||  ||   ||\\\\    ||=     ||\\\\||   ||    ==");
-            Console.WriteLine("==    \\\\//    || ||||   ||||||  ||||||   ||  \\\\  ||||||  ||  ||   ||    ==");
-            Console.WriteLine("==========================================================================");
-            Console.WriteLine("==========================================================================");
-            Console.ResetColor();
-        }
 
-        static void StartMenu()
-        {
-            Console.WriteLine("Welcome to video rent store.");
-            Console.WriteLine("Use the numbers in front of the selection to navigate thru the applicaton.");
-            Console.WriteLine("1. Rent a movie with existing account.");
-            Console.WriteLine("2. Rent a movie and create account.");
-            Console.WriteLine("3. Exit application.");
+            while (true)
+            {
+                _menuService.ClearScreen();
+                _menuService.ErrorMessage(errorMessage);
+                _menuService.MainMenu(activeUser.FullName);
+                string stringSelection = Console.ReadLine();
+                var isValidInput = int.TryParse(stringSelection, out int selection);
+                if(!isValidInput)
+                {
+                    Console.WriteLine("Please enter a valid input");
+                }
+                switch (selection)
+                {
+                    case 1:
+                        _movieService.ViewMovieList(activeUser);
+                        break;
+                    case 2:
+                        _movieService.ViewRentedVideos(activeUser);
+                        break;
+                    case 3:
+                        try
+                        {
+                            _movieService.ViewRentedHistoryVideos(activeUser);
+                        }
+                        catch (Exception ex)
+                        {
+                            errorMessage = ex.Message;
+                        }
+                        break;
+                    case 4:
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        Console.WriteLine("Please enter a valid input");
+                        break;
+                }
+            }
         }
     }
 }
