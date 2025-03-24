@@ -72,6 +72,15 @@
 
             try
             {
+                throw new OurCustomException("Our first exception");
+            }
+            catch(OurCustomException ex)
+            {
+                Console.WriteLine(ex.OurMessage);
+            }
+
+            try
+            {
                 SomeMethod();
             }
             catch(Exception ex)
