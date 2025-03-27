@@ -2,16 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\G6",
-    "\\G6\\Class 07\\Code",
-    "\\G6\\Class 07\\Code\\EmployeesApp",
-    "\\G6\\Class 08",
     "\\G6\\Class 08\\Code",
-    "\\G6\\Class 08\\Code\\Collections",
     "\\G6\\Class 08\\Code\\Exercise1",
     "\\G6\\Class 08\\Code\\SongsApp",
     "\\G6\\Class 08\\Code\\SongsApp.Domain",
-    "\\G6\\Class 08\\Code\\SongsApp.Domain\\Models"
+    "\\G6\\Class 08\\Code\\SongsApp.Domain\\Models",
+    "\\G6\\Class 09",
+    "\\G6\\Class 09\\Code",
+    "\\G6\\Class 09\\Code\\ErrorHandling"
   ],
-  "SelectedNode": "\\G6\\Class 08\\Code\\Collections\\Program.cs",
+  "SelectedNode": "\\G6\\Class 09\\Code\\ErrorHandling\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
