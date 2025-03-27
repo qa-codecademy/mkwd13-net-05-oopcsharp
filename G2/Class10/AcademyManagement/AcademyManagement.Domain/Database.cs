@@ -1,9 +1,4 @@
 ﻿using AcademyManagement.Domain.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AcademyManagement.Domain
 {
@@ -24,10 +19,10 @@ namespace AcademyManagement.Domain
 
             Admins = new List<Admin>()
             {
-                new Admin("bobsky123", "bobsky123", "Bob", "Bobsky", 28),
-                new Admin("doe123", "doe123", "John", "Doe", 23),
-                new Admin("mmouse123", "mmouse123", "Mickey", "Mouse", 32),
-                new Admin("pink123", "pink123", "Pink", "Panther", 31),
+                new Admin("Bob", "Bobsky", "bobsky123", "bobsky123",  28),
+                new Admin("John", "Doe", "doe123", "doe123", 23),
+                new Admin( "Mickey", "Mouse", "mmouse123", "mmouse123", 32),
+                new Admin("Pink", "Panther", "pink123", "pink123",  31),
             };
 
             Trainers = new List<Trainer>()
