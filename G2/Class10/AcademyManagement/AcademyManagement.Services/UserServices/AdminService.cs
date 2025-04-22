@@ -26,14 +26,14 @@ namespace AcademyManagement.Services.UserServices
         }
 
         //CreateUser
-        public void CreateUser(string username, string password, Role role)
+        public void CreateUser(string firstName, string lastName, string age, string username, string password, Role role)
         {
             bool userExists = _dataAccess.CheckIfUserExsists(username, role);
             if (userExists)
             {
                 throw new Exception($@"{role} with ""{username}"" already exists!");
             }
-            _dataAccess.CreateNewUser(username, password, role);
+            _dataAccess.CreateNewUser(firstName, lastName, age, username, password, role);
         }
 
         //GetUsersToRemove

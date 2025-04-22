@@ -63,20 +63,20 @@ namespace AcademyManagement.Domain
             }
         }
 
-        public void CreateNewUser(string username, string password, Role role)
+        public void CreateNewUser(string firstName, string lastName, string age, string username, string password, Role role)
         {
             switch (role)
             {
                 case Role.Admin:
-                    Admin newAdmin = new Admin(username, password);
+                    Admin newAdmin = new Admin(firstName, lastName, username, password, int.Parse(age));
                     _database.Admins.Add(newAdmin);
                     break;
                 case Role.Trainer:
-                    Trainer newTrainer = new Trainer(username, password);
+                    Trainer newTrainer = new Trainer(firstName, lastName, username, password, int.Parse(age));
                     _database.Trainers.Add(newTrainer);
                     break;
                 case Role.Student:
-                    Student newStudent = new Student(username, password);
+                    Student newStudent = new Student(firstName, lastName, username, password, int.Parse(age));
                     _database.Students.Add(newStudent);
                     break;
                 default:
